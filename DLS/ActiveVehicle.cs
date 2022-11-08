@@ -34,7 +34,7 @@ namespace DLS
             {
                 bool temp = vehicle.IsSirenOn;
                 vehicle.IsSirenOn = false;
-                InitialLengths = new float[20];
+                InitialLengths = new float[EmergencyLighting.MaxLights];
                 GameFiber.Yield();
                 for (int i = 0; i < InitialLengths.Length; i++)
                 {
